@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.calculadora {
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+    width: 600px;
+    height: 400px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+.calculadora .pantalla {
+    height: 100px;
+    grid-column: x0 / x4;
+    grid-row: y0 / y1;
+    border: 1px solid black;
+    font-size: 80px;
+}
+.calculadora button {
+    font-size: 80px;
+    border: 1px solid black;
+}
+.calculadora button:hover {
+    background: lightgreen;
+}
